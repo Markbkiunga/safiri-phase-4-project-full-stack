@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# SAFIRI 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Brief Description
 
-## Available Scripts
+Safiri is a travel app designed to help users explore various destinations, submit reviews, and view a slideshow of attractive travel locations.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Home : Displays a welcome message and a slideshow of travel destinations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Discover Page: Shows a list of popular travel places with their details.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* About Us Page: Provides information about the application and its team.
 
-### `npm test`
+* Review Page: Allows users to submit reviews and view existing reviews from other tourists.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Contact Us Page: Provides contact information and location details.
 
-### `npm run build`
+## Technologies used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React
+* React Router
+* CSS
+* React Slick for slideshow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setting up
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Cloning the repository
 
-### `npm run eject`
+Run git clone `https://github.com/kwambokamegan/GROUP-5-PHASE-2-PROJECT`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Installing Dependancies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Starting the application in the server 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Run npm start
 
-## Learn More
+## Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. App.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is the main component that sets up the routing for the application.
 
-### Code Splitting
+* Routes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+/ - Home
+/discover - Discover
+/about - About Us
+/review - Review
+/contactus - Contact Us
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Home.js
+ Displays the home page with a welcome message and a slideshow of travel destinations.
 
-### Making a Progressive Web App
+* Dependencies: NavBar, Slideshow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3.  Slideshow.js
+A carousel component that shows various travel destination images and text.
 
-### Advanced Configuration
+Dependency: react-slick
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Discover.js
+Lists popular travel places with their images, descriptions, activities, and transport options.
 
-### Deployment
+5. Footer.js
+ Displays the footer with contact information, including email, phone number, and location.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Dependency: react-icons
 
-### `npm run build` fails to minify
+6. NavBar.js
+ Navigation bar with links to different pages of the app. Includes a scroll effect for the navbar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+7. Review.js
+ Allows users to submit reviews and view existing reviews. Reviews include a name, place visited, review text, image, rating, and source.
+
+8. ContactUs.js
+ Displays contact information for the application.
+
+## Data structure in db.json
+
+1. Places
+ID: Unique identifier for the place
+Title: Name of the place
+Image: URL to the place’s image
+Description: Brief description of the place
+Activities: Popular activities at the place
+Transport Options: How to get to the place
+
+2. Reviews
+ID: Unique identifier for the review
+Name: Name of the reviewer
+Image: URL to the reviewer's image
+Location: Location where the review was made
+Review: Review text
+
+## Links
+
+### Vercel link 
+
+[Vercel Link](https://group-5-phase-2-project.vercel.app/review)
+
+### Git hub link
+
+[Git hub link ] (`https://github.com/kwambokamegan/GROUP-5-PHASE-2-PROJECT`)
+
+## Author 
+Megan Kwamboka
+
+## Date
+
+16th August 2024
+
+## Conclusion 
+The project was worked on by Megan Kwamboka , Mark Brian , Kevin Kamau and Aron Kipkorir.
+
+
+
+
